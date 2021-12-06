@@ -7,6 +7,7 @@
 a {
    color: #fff;
    text-decoration: none;
+   transition: all .5s;
 }
 
 body {
@@ -326,10 +327,130 @@ body {
    position: relative;
 }
 
+.footer-copy a:hover {
+   color: #f38384;
+}
+
 .footer-copy li+li::before {
    content: "|";
    position: absolute;
    left: -5px;
+}
+
+@media (max-width: 1220px) {
+   .advantages__text {
+      padding-left: 20px;
+   }
+
+   .design__images img {
+      width: 100%;
+   }
+}
+
+@media (max-width: 1020px) {
+   .design__images {
+      margin-bottom: 50px;
+   }
+
+   .design-row {
+      display: block;
+      margin-bottom: 50px;
+   }
+
+   .design-row__item {
+      max-width: 100%;
+      margin-bottom: 30px;
+   }
+
+   .design-row__item-text {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 930px) {
+   .advantages-inner__row {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .advantages__title {
+      position: static;
+   }
+
+   .advantages-descr {
+      text-align: center;
+   }
+
+   .advantages__text {
+      padding-left: 0;
+      margin: 25px auto;
+   }
+
+   .advantages-inner__row {
+      margin-bottom: 50px;
+   }
+
+   .advantages-inner__row--mobile .advantages-descr {
+      order: -1;
+      display: flex;
+      flex-direction: column-reverse;
+   }
+}
+
+@media (max-width: 820px) {
+   .statistics-items {
+      flex-wrap: wrap;
+   }
+
+   .statistics-item {
+      padding: 50px;
+   }
+}
+
+@media (max-width: 650px) {
+   .advantages__img img {
+      width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   .statistics {
+      margin: 70px 0 40px;
+   }
+}
+
+@media (max-width: 500px) {
+   .video {
+      margin-bottom: 55px;
+   }
+
+   .footer {
+      padding: 55px 0 20px;
+   }
+
+   .footer-btn {
+      text-align: center;
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width: 440px) {
+   .header-content__title {
+      font-size: 80px;
+      line-height: 90px;
+      margin-top: 20px;
+   }
+
+   .statistics-item {
+      width: 100%;
+   }
+
+   .statistics-item__num {
+      font-size: 80px;
+      line-height: 100px;
+      margin-bottom: 7px;
+      font-family: 'Roboto', sans-serif;
+   }
 }
 
 @media (max-width: 410px) {
@@ -353,5 +474,26 @@ body {
 
    .menu__list ul {
       width: 100%;
+   }
+
+   .statistics-item {
+      padding: 25px 0;
+   }
+
+   .statistics {
+      margin: 70px 0 40px;
+   }
+
+   .button {
+      padding: 20px 45px
+   }
+
+   .video {
+      margin-bottom: 50px;
+   }
+
+   body {
+      font-size: 20px;
+      line-height: 24px;
    }
 }
