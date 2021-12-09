@@ -14,4 +14,3 @@ $(function(){
       $('.menu').removeClass('active');
    });
 });
-// some comment
